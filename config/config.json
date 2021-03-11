@@ -1,0 +1,102 @@
+{
+    "development": {
+        "define": {
+            "charset": "utf8",
+            "collate": "utf8_general_ci"
+        },
+        "charset": "utf8",
+        "collate": "utf8_general_ci",
+        "dialect": "mysql",
+        "port": 3306,
+        "logging": false,
+        "database": "stack_test",
+        "replication": {
+            "read": [{
+                "host": "127.0.0.1",
+                "username": "root",
+                "password": ""
+            }],
+            "write": {
+                "host": "127.0.0.1",
+                "username": "root",
+                "password": ""
+            }
+        },
+        "pool": {
+            "max": 20,
+            "idle": 30000
+        }
+    },
+    "mysqlConfig_": {
+        "define": {
+            "charset": "utf8",
+            "collate": "utf8_general_ci"
+        },
+        "charset": "utf8",
+        "collate": "utf8_general_ci",
+        "dialect": "mysql",
+        "port": 3306,
+        "logging": false,
+        "database": "docty-test",
+        "replication": {
+            "read": [{
+                "host": "docty.cvpqhk0vnc1l.us-east-2.rds.amazonaws.com",
+                "username": "doctyAnurag",
+                "password": "Anurag123"
+            }],
+            "write": {
+                "host": "docty.cvpqhk0vnc1l.us-east-2.rds.amazonaws.com",
+                "username": "doctyAnurag",
+                "password": "Anurag123"
+            }
+        },
+        "pool": {
+            "max": 20,
+            "idle": 30000
+        }
+    },
+    "domains": {
+        "patient": "https://patientpreprod.docty.ai",
+        "doctor": "https://doctorpreprod.docty.ai",
+        "clinic": "https://clinicpreprod.docty.ai",
+        "monitor": "https://monitorpreprod.docty.ai",
+        "nurse": "https://nursepreprod.docty.ai",
+        "corporate": "https://corporatepreprod.docty.ai"
+    },
+    "basePath": "http://127.0.0.1:4200/",
+    "socket_server_url": "http://127.0.0.1:3004",
+    "client_url": "http://127.0.0.1:4200",
+    "baseDomain": "localhost:4200",
+    "support_email": "wbit85@gmail.com",
+    "openpay": {
+        "prodMode": true,
+        "merchantId": "mrsmhzijucw0rm5pywga",
+
+        "privateKey": "sk_9808c07316f94edbbcfce63899c30b04"
+    },
+    "twilio": {
+        "accountSid": "AC22991295190383940e6c7d36c8638454",
+        "authToken": "a2ca7fcda7f129e532d8571611b412b8",
+        "twilioPhoneNumber": "+18338881825"
+    },
+    "awsCred": {
+        "accessKeyId": "AKIAVT2TP7FVKGDCUOFQ",
+        "secretAccessKey": "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",
+        "region": "us-east-2"
+    },
+    "awsBucket": "bucket name",
+    "jotform": {
+        "DropboxPath": "/docty jotform",
+        "accessToken": "token",
+        "apiKey": "112cd94c67c520e7ddd773303346ba34",
+        "webHook": "https://apicotest.docty.ai/api/webhook/jotform",
+        "formId": 202454267777060,
+        "formUrl": "https://hipaa.jotform.com/"
+    },
+    "dropbox": {
+        "DropboxPath": "/docty jotform",
+        "accessToken": "token"
+    }
+
+
+}
